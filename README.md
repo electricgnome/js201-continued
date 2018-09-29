@@ -48,3 +48,5 @@ test.
 [js201]:https://github.com/oakmac/js201
 [Node.js]:https://nodejs.org/
 [npm]:https://en.wikipedia.org/wiki/Npm_(software)
+
+[![Build Status](https://travis-ci.org/electricgnome/fuelReport.svg?branch=master)](https://travis-ci.org/electricgnome/fuelReport)
