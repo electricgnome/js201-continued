@@ -49,4 +49,4 @@ test.
 [Node.js]:https://nodejs.org/
 [npm]:https://en.wikipedia.org/wiki/Npm_(software)
 
-[![Build Status](https://travis-ci.org/electricgnome/fuelReport.svg?branch=master)](https://travis-ci.org/electricgnome/fuelReport)
+[![Build Status](https://travis-ci.org/electricgnome/js201-continued.svg?branch=master)](https://travis-ci.org/electricgnome/js201-continued)
