@@ -21,7 +21,14 @@
 // isVowel(99) --> false
 // isVowel({e: 'Elephant'}) --> false
 
+function isVowel(text) {
+  //    return ( (text.match(/^[aeiou]/i)) ? true : false)
+  return /^[aeiou]/i.test(text);
+}
 
+console.log(isVowel("s"));
+console.log(isVowel("A"));
+console.log("~~~~~~~~~~~~~~~~~~~~~~~~");
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write two functions: "isEven" and "isOdd" that take a number argument and
@@ -37,7 +44,27 @@
 // isOdd('7') --> false
 // isOdd(3.14) --> false
 
+function isEven(number) {
+  return number % 2 === 0 ? true : false;
+}
+console.log("evens");
+console.log(isEven(2));
+console.log(isEven(5));
+console.log(isEven("some"));
+console.log("~~~~~~~~~~~~~~~~~~~~~~~~");
 
+function isOdd(number) {
+  if (Number(number) && Number.isInteger(number)) {
+    return number % 2 === 0 ? false : true;
+  } else {
+    return false;
+  }
+}
+
+console.log("odds");
+console.log(isOdd(2));
+console.log(isOdd(5));
+console.log(isOdd("some"));
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "isCapitalCity" that takes two arguments: a US state and a city name
@@ -52,3 +79,61 @@
 // isCapitalCity('Texas', 'Houston') --> false
 // isCapitalCity('Alaska', 'Juneau') --> true
 // isCapitalCity('Strawberry', 'Mango') --> false
+
+
+const map = {
+    "Alabama": "Montgomery",
+    "Alaska": "Juneau",
+    "Arizona": "Phoenix",
+    "Arkansas": "Little Rock",
+    "California": "Sacramento",
+    "Colorado": "Denver",
+    "Connecticut": "Hartford",
+    "Delaware": "Dover",
+    "Florida": "Tallahassee",
+    "Georgia": "Atlanta",
+    "Hawaii": "Honolulu",
+    "Idaho": "Boise",
+    "Illinois": "Springfield",
+    "Indiana": "Indianapolis",
+    "Iowa": "Des Moines",
+    "Kansas": "Topeka",
+    "Kentucky": "Frankfort",
+    "Louisiana": "Baton Rouge",
+    "Maine": "Augusta",
+    "Maryland": "Annapolis",
+    "Massachusetts": "Boston",
+    "Michigan": "Lansing",
+    "Minnesota": "Saint Paul",
+    "Mississippi": "Jackson",
+    "Missouri": "Jefferson City",
+    "Montana": "Helana",
+    "Nebraska": "Lincoln",
+    "Nevada": "Carson City",
+    "New Hampshire": "Concord",
+    "New Jersey": "Trenton",
+    "New Mexico": "Santa Fe",
+    "New York": "Albany",
+    "North Carolina": "Raleigh",
+    "North Dakota": "Bismarck",
+    "Ohio": "Columbus",
+    "Oklahoma": "Oklahoma City",
+    "Oregon": "Salem",
+    "Pennsylvania": "Harrisburg",
+    "Rhode Island": "Providence",
+    "South Carolina": "Columbia",
+    "South Dakota": "Pierre",
+    "Tennessee": "Nashville",
+    "Texas": "Austin",
+    "Utah": "Salt Lake City",
+    "Vermont": "Montpelier",
+    "Virginia": "Richmond",
+    "Washington": "Olympia",
+    "West Virginia": "Charleston",
+    "Wisconsin": "Madison",
+    "Wyoming": "Cheyenne"
+  }
+  
+function isCapitalCity(state, city) {
+
+}
